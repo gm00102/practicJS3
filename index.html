@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parrentblock1">
+    <div class="block1">
+        <label><input type="radio" name="12" id="1"> Выберете, если хотите настроить каждую сторону отдельно</label>
+        <p>Верхний левый угол
+            <input type="range" id="rtl" oninput="fun1()">
+            <input type="text" id="ttl" value="50">
+        </p>
+        <p>Верхний правый угол
+            <input type="range" id="rtr" oninput="fun1()">
+            <input type="text" id="ttr" value="50">
+        </p>
+        <p>Нижний правый угол
+            <input type="range" id="rbr" oninput="fun1()">
+           <input type="text" id="tbr" value="50">
+        </p>
+        <p>Нижний левый угол
+            <input type="range" id="rbl" oninput="fun1()">
+            <input type="text" id="tbl" value="50">
+        </p>
+    </div>
+    <div class="block2">
+        <label><input type="radio" name="12" id="2"> Выберете, если хотите настроить все стороны</label>
+        <p>все углы
+            <input type="range" id="rall" oninput="fun1()">
+            <input type="text" id="tall" value="50">
+        </p>
+    </div>
+</div>
+
+    <div id="block"></div>
+    <script src="js.js"></script>
+</body>
+</html>
